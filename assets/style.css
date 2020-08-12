@@ -1,0 +1,223 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+
+
+
+/* -------------------------------- Variables ------------------------------- */
+:root {
+  --main-color: #eb233c;
+}
+/* -------------------------------- Variables ------------------------------- */
+
+/* ---------------------------------- Fonts --------------------------------- */
+.heading-hero,
+.heading-lvl-primary,
+.heading-lvl-quaternary {
+  font-family: "Oleo Script Swash Caps", cursive;
+}
+.heading-hero {
+  font-size: 50px;
+  font-weight: 400;
+}
+.heading-lvl-primary {
+  font-size: 24px;
+  font-weight: 400;
+}
+.heading-lvl-quaternary {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.para {
+  font-size: 14px;
+  font-weight: 400;
+}
+/* ---------------------------------- Fonts --------------------------------- */
+
+/* !----------------------------- Reusable Blocks ---------------------------- */
+.link,
+.link:hover {
+  text-decoration: none;
+}
+
+.button {
+  padding: 15px 36px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all ease-in-out 0.3s;
+  border: none;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
+.button--transparent {
+  border: 1px solid gray;
+  color: #fff;
+  background: transparent;
+}
+
+.button--red {
+  background: var(--main-color);
+  color: #fff;
+}
+
+.button--transparent:hover {
+  background: #fff;
+  color: #000;
+  border: none;
+}
+
+.button--red:hover {
+  background: var(--main-color);
+  color: #fff;
+}
+/* !----------------------------- Reusable Blocks ---------------------------- */
+
+.text-red {
+  color: var(--main-color);
+}
+
+.section-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./img/background.jpg");
+  height: 75vh;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section-hero__inner-container {
+  height: 75vh;
+}
+
+.section-services {
+  padding: 50px 0;
+  background: #fff;
+}
+
+.services-card__icon-item::before {
+  margin-left: 0;
+  font-size: 25px;
+  padding: 15px;
+  border-radius: 50%;
+  color: var(--main-color);
+  border: 1px solid#eaeaea;
+}
+
+.services-card__text-container {
+  padding: 10px;
+}
+
+.section-works {
+  padding: 100px 0;
+  background-color: #faf4fa;
+}
+
+.portfolio-card {
+  margin: 20px;
+}
+
+.portfolio-card__img-container {
+  position: relative;
+}
+
+.portfolio-card__img-overlay {
+  background: #eb233a32;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all ease-in-out 0.5s;
+}
+
+.portfolio-card:hover .portfolio-card__img-overlay {
+  opacity: 1;
+}
+
+.section-heading {
+  padding: 10px 0 50px 0;
+}
+
+.section-heading__title-main {
+  border-bottom: 2px solid red;
+  display: inline-block;
+  margin-bottom: -5px;
+  line-height: 0;
+}
+
+.section-heading {
+  line-height: 0;
+}
+
+.section-subscribe {
+  padding: 50px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./img/background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.section-about {
+  padding: 100px 0;
+  background: #fff;
+}
+
+.section-contact {
+  padding: 100px 0;
+  background: #f7f7f7;
+}
+
+.contact-form__input-box {
+  border: none;
+  border-bottom: 2px solid var(--main-color);
+  border-radius: 0;
+  background: #f7f7f7;
+}
+
+.form-control:focus,
+.form-control:hover {
+  background-color: transparent;
+  border-color: #000;
+  outline: 0;
+  box-shadow: none;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 600px) {
+  .heading-hero {
+    font-size: 36px;
+  }
+}
+.mynav {
+	transition: all 0.8s ease-in;
+	background: rgb(68, 51, 68) none repeat scroll 0% 0%;
+}
+.mynav li a {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+.nav > li > a:focus, .nav > li > a {
+	color: #E1DBDB;
+}
+.nav > li > a:focus, .nav > li > a:hover, .nav > li > a:focus, .nav > li.active > a {
+	background-color: #665566;
+	color: #fff;
+	border-bottom: 2px solid #EB233C;
+}
+.navbar-nav > li > a {
+	padding-top: 15px;
+	padding-bottom: 13px;
